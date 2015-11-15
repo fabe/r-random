@@ -1,12 +1,20 @@
 {
-  "name": "reddit-first",
+  "name": "r-random",
   "version": "1.0.0",
-  "description": "",
+  "description": "Task for a course at FH Potsdam.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Fabian Schultz",
+  "repository": "https://github.com/fabe/r-random",
+  "license": "ISC",
+  "dependencies": {
+    "cron": "^1.0.9",
+    "express": "^4.13.3",
+    "fs": "0.0.2",
+    "jade": "^1.11.0",
+    "redwrap": "0.0.4"
+  }
 }

@@ -1,9 +1,11 @@
 doctype html
 html
   head
-    title Reddit
+    title r/random
     link(rel="stylesheet", href="style.css")
   body
-    .helper
-    img(src=data)
-    .r r/!{r}
+    #images
+      - for (var i = 0; i < images.length; i++) {
+        a(href='//reddit.com/r/' + images[i].sub target="_blank")
+          img(src='images/' + images[i].file, alt=images[i].sub title=images[i].sub onerror='this.style.display = "none"')
+      - }

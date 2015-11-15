@@ -2,27 +2,37 @@ html,
 body {
   height: 100%; width: 100%;
   padding: 0; margin: 0;
-  background: #111;
+  background: #242424;
   font-family: sans-serif;
   color: #fff;
   text-align: center;
-  white-space: nowrap;
 }
 
-.helper {
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
+#images {
+  -webkit-column-count: 6;
+  -webkit-column-gap: 2vw;
+  column-count: 6;
+  column-gap: 2vw;
+  width: 96vw;
+  margin: 2vw auto;
 }
 
 img {
-  max-width: 100%;
-  max-height: 100%;
-  vertical-align: middle;
+  display: inline-block;
+  margin-bottom: 2vw;
+  width: 100%;
 }
 
-.r {
-  position: absolute;
-  right: 10px; bottom: 10px;
-  text-shadow: 1px 1px 1px #111;
+@media only screen and (max-width: 960px)  {
+  #images {
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
+}
+
+@media only screen and (max-width: 480px)  {
+  #images {
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
 }
